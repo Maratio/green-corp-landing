@@ -42,10 +42,25 @@ header {
   .about__image {
     width: 500px;
   }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
    
   .about__sun-image {
     width: 100px;
     height: 100px;
+    animation: rotation;
+    animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: linear;
+  position:absolute;
   }
 
   .about {
